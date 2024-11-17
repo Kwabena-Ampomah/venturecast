@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venture Cast App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollSmoother.min.js"></script>
+</head>
+<body>
+
+    <section class="homescreen">
+        <div class="page-section" id="home">
+            <div class="header">
+                <a href="#jake-paul" class="link">About</a> 
+                <a href="#signin" class="link">Connect</a>
+            </div>
+            <h1>Welcome to the Venture Cast App</h1>
+        </div>
+    </section>
+    
+
+    <section class="jake-paul" id="jake-paul">
+        <div class="content-container">
+            <h3>The world’s first premier platform for supporting and investing in Streamers...</h3>
+            <img class="jake-image" src="first.png" alt="Jake Paul">
+        </div>
+    
+    </section>
+
+   
+    <section class="kai-cenat">
+        <div class="content-container">
+            <h3>Venture Cast connects fans with streamers by turning popularity into valuable opportunities...</h3>
+            <img class="kai-image" src="second.png" alt="Kai Cenat">
+        </div>
+      
+    </section>
+    <section class="tom-p">
+        <div class="content-container">
+            <h3>Join a revolutionary movement where content creation meets smart investing...</h3>
+            <img class="tom-image" src="third.png" alt="Tom P">
+        </div>
+    </section>
+
+        <div class="contacts" id="connect">
+            <h3>Connect with us</h3>
+            <div class="contact-row">
+                <div class="contact">
+                    <img class="contact-image" src="alex.png" alt="Alex">
+                    <h4>Alex Creighton</h4>
+                    <h5> CEO</h5>
+                    <h6>acreighton04@gmail.com
+                    </h6>
+                </div>
+                <div class="contact">
+                    <img class="contact-image" src="kwab.png" alt="Kwab">
+                    <h4>Kwabena Ampomah</h4>
+                    <h5>CTO</h5>
+                    <h6>kwabenaandampomah@gmail.com</h6>
+                </div>
+                <div class="contact">
+                    <img class="contact-image" src="matt.png" alt="Matt">
+                    <h4>Matt Creighton</h4>
+                    <h5>CIO
+                    </h5>
+                    <h6>mcreighton40@gmail.com</h6>
+                </div>
+                <div class="contact">
+                    <img class="contact-image" src="colby.png" alt="Colby">
+                    <h4>Colby Brundin</h4>
+                    <h5>COO</h5>
+            
+                    <h6>colbybrundin@gmail.com</h6>
+                </div>
+            </div>
+        </div>
+ 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const aboutLink = document.querySelector('a[href="#jake-paul"]');
+            const jakePaulSection = document.querySelector('#jake-paul');
+
+            
+            aboutLink.addEventListener('click', (event) => {
+                event.preventDefault(); 
+                jakePaulSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const aboutLink = document.querySelector('a[href="#sigin"]');
+            const jakePaulSection = document.querySelector('#sigin');
+
+            
+            aboutLink.addEventListener('click', (event) => {
+                event.preventDefault(); 
+                jakePaulSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+    <div class ="signin" id ="signin">
+    <div id="mc_embed_shell">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+          #mc_embed_signup{background: white; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
+  <div id="mc_embed_signup">
+      <form action="https://gmail.us14.list-manage.com/subscribe/post?u=71d571d741f502f3cd37f9b28&amp;id=a4823e0e7a&amp;f_id=00c692e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+          <div id="mc_embed_signup_scroll"><h2>Connect with us</h2>
+              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+              <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">First Name </label><input type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div><div class="mc-field-group"><label for="mce-LNAME">Last Name </label><input type="text" name="LNAME" class=" text" id="mce-LNAME" value=""></div>
+          <div id="mce-responses" class="clear foot">
+              <div class="response" id="mce-error-response" style="display: none;"></div>
+              <div class="response" id="mce-success-response" style="display: none;"></div>
+          </div>
+      <div aria-hidden="true" style="position: absolute; left: -5000px;">
+          /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+          <input type="text" name="b_71d571d741f502f3cd37f9b28_a4823e0e7a" tabindex="-1" value="">
+      </div>
+          <div class="optionalParent">
+              <div class="clear foot">
+                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                  <p style="margin: 0px auto;"><a href="http://eepurl.com/i4k-WA" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+              </div>
+          </div>
+      </div>
+  </form>
+  </div>
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='COMPANY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+</div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
+
